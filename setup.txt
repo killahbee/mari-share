@@ -1,0 +1,50 @@
+ssh 'random8'
+
+* Update
+apt-get update
+apt-get upgrade
+
+* Install pip
+sudo apt-get install python-pip python-dev build-essential
+sudo pip install --upgrade pip 
+
+* Install the Python libraries
+sudo pip install -r /path/to/requirements.txt
+
+* Install the ORM (psycopg2)
+sudo apt-get install python-psycopg2
+
+* Install PostgreSQL
+sudo apt-get install postgresql postgresql-contrib
+
+* Change to the postgres user
+sudo -i -u postgres
+
+* Connect to postgres
+psql
+
+* Create the user
+CREATE USER howzey_admin WITH PASSWORD 'W9d^s%8FoO~48j*9DO~o';
+
+* Create the database
+CREATE DATABASE howzey;
+
+* Give the user permission
+GRANT ALL PRIVILEGES ON DATABASE howzey to howzey_admin;
+
+* We can connect like this
+psql -h localhost -d howzey -U howzey_admin
+
+* Install ruby ( for sass )
+sudo apt-get install ruby-full build-essential
+
+* For Flask-Assets, we need to install sass so we can use scss
+sudo gem install sass
+
+* Install Nginx
+sudo apt-get install nginx
+
+* Setup the Nginx config file [ /etc/nginx/nginx.conf ]
+
+* DONT FORGET TO TURN OFF POSTGRES LOCALLY!!
+sudo /etc/init.d/postgresql stop
