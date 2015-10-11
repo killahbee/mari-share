@@ -1,41 +1,34 @@
-@media -sass-debug-info{filename{}line{font-family:\000031}}
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif;
-  color: #333;
-}
-
-@media -sass-debug-info{filename{}line{font-family:\0000316}}
-* {
-  position: relative;
-}
-
-@media -sass-debug-info{filename{}line{font-family:\0000322}}
+/*--------------------------------------------------------------
+1.0 - Colors
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+2.0 - Button Dimensions
+--------------------------------------------------------------*/
+@media -sass-debug-info{filename{}line{font-family:\000033}}
 .stickynav {
-  width: 100%;
   position: fixed;
   top: 0px;
+  width: 100%;
+  height: 85px;
   z-index: 100;
   background-color: #FFF;
   opacity: 0.9;
-  height: 85px;
   border-bottom: 1px solid #ddd;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000333}}
+@media -sass-debug-info{filename{}line{font-family:\0000317}}
 .navcontainer {
   width: 80%;
   margin: 0 auto;
   padding-top: 20px;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000341}}
+@media -sass-debug-info{filename{}line{font-family:\0000323}}
 .logo {
   height: 40px;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000347}}
+@media -sass-debug-info{filename{}line{font-family:\0000327}}
 header {
   color: #fff;
   padding: 8.5em 0 6.5em 0;
@@ -45,49 +38,49 @@ header {
   overflow: hidden;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000358}}
+@media -sass-debug-info{filename{}line{font-family:\0000336}}
 .header-image {
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
-  border-bottom: 1px solid white;
   -webkit-filter: blur(3px);
   filter: blur(3px);
   background-image: url("header_img.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  border-bottom: 1px solid white;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000381}}
+@media -sass-debug-info{filename{}line{font-family:\0000356}}
 h1 {
   font-size: 90px;
   text-shadow: 2px 2px 6px #2F8460;
   font-weight: 600;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000388}}
+@media -sass-debug-info{filename{}line{font-family:\0000362}}
 span.accent {
   color: #19b5bc;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000394}}
+@media -sass-debug-info{filename{}line{font-family:\0000366}}
 h2 {
   text-align: center;
   font-size: 50px;
   font-weight: 400;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\00003103}}
+@media -sass-debug-info{filename{}line{font-family:\0000372}}
 h3 {
   font-size: 30px;
   font-weight: 400;
   margin: 0px;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\00003115}}
+@media -sass-debug-info{filename{}line{font-family:\0000378}}
 .main-nav {
   margin: 0;
   padding: 0;
@@ -95,35 +88,35 @@ h3 {
   margin-top: 9px;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\00003128}}
+@media -sass-debug-info{filename{}line{font-family:\0000385}}
 .main-nav li {
   display: inline;
   margin-right: 20px;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\00003137}}
+@media -sass-debug-info{filename{}line{font-family:\0000390}}
 .main-nav li:last-child {
   margin-right: 0px;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\00003144}}
+@media -sass-debug-info{filename{}line{font-family:\0000394}}
 .main-nav li a {
   text-decoration: none;
   color: gray;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\00003152}}
+@media -sass-debug-info{filename{}line{font-family:\0000399}}
 .main-nav li:hover a {
   color: #2F8460;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\00003160}}
+@media -sass-debug-info{filename{}line{font-family:\00003103}}
 .wrapper {
   width: 80%;
   margin: 0 auto;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\00003170}}
+@media -sass-debug-info{filename{}line{font-family:\00003108}}
 .gray-box {
   background-color: #f5f5f5;
   border: 1px solid #ddd;
@@ -131,7 +124,7 @@ h3 {
   margin: 30px;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\00003184}}
+@media -sass-debug-info{filename{}line{font-family:\00003115}}
 .button {
   display: inline-block;
   background-color: #2F8460;
@@ -146,34 +139,29 @@ h3 {
   animation-iteration-count: infinite;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\00003203}}
+@media -sass-debug-info{filename{}line{font-family:\00003129}}
 .button:hover {
   color: gray;
   transform: scale(1.1);
 }
 
-@media -sass-debug-info{filename{}line{font-family:\00003212}}
-.clear-both {
-  clear: both;
-}
-
 @media only screen and (max-width: 1100px) {
-@media -sass-debug-info{filename{}line{font-family:\00003221}}
+@media -sass-debug-info{filename{}line{font-family:\00003136}}
   .main-nav {
     display: none;
   }
 
-@media -sass-debug-info{filename{}line{font-family:\00003227}}
+@media -sass-debug-info{filename{}line{font-family:\00003140}}
   .navcontainer {
     text-align: center;
   }
 
-@media -sass-debug-info{filename{}line{font-family:\00003234}}
+@media -sass-debug-info{filename{}line{font-family:\00003144}}
   .logo {
     display: inline;
   }
 
-@media -sass-debug-info{filename{}line{font-family:\00003241}}
+@media -sass-debug-info{filename{}line{font-family:\00003148}}
   h2 {
     font-size: 34px;
   }

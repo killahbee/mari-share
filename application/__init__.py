@@ -43,7 +43,7 @@ import db
 js_core = Bundle('js/core/core.js', filters='rjsmin', output='gen/core.js')
 assets.register('js_core', js_core)
 
-css_core = Bundle('css/core/reset.css', filters='scss', output='gen/core.css')
+css_core = Bundle('css/core/reset.css', 'css/core/branding.css', filters='scss', output='gen/core.css')
 assets.register('css_core', css_core)
 
 # use bcrypt for our passwords
