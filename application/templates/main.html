@@ -1,1 +1,53 @@
-Hello
+{% extends "html_base.html" %}
+
+{% block local_css %}
+	{% assets filters="scss", output="gen/main.css", "css/main.css" %}
+		<link rel="stylesheet" href="{{ ASSET_URL }}">
+	{% endassets %}
+{% endblock %}
+
+{% block local_js %}
+{% endblock %}
+
+{% block page_content %}
+
+	<div class="stickynav">
+
+		<div class="navcontainer">
+
+			<img class="logo" src="http://www.weddingwire.com/assets/logos/weddingwire-logo-4659f5f10021f289f09de530fdca9886.svg"/>
+
+			<ul class="main-nav">
+				<li>
+					<a href="#How-it-works">How it works</a>
+				</li>
+
+				<li>
+					<a href="#">FAQs</a>
+				</li>
+
+				<li>
+					<a href="#">Sign Up</a>
+				</li>
+
+				<li>
+					<a href="#">Log In</a>
+				</li>
+			</ul>    
+
+		</div>
+
+	</div>
+
+	<header>
+		<div class="header-image"></div>
+		<h1 class="animated bounceIn">Mari-Share</h1>
+		<a class="button" href="#">Get a free account &raquo;</a>
+	</header>
+
+	<div class="wrapper">
+		<h2>How it works</h2>
+		<div class="gray-box" id="How-it-works">PLaceholder text!</div>
+	</div>
+
+{% endblock %}
