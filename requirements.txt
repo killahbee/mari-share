@@ -2,7 +2,6 @@ Flask
 flask-bcrypt
 Flask-Assets
 Flask-WTF
-flask-bcrypt
 psycopg2
 tornado
 requests
