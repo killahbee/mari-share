@@ -37,19 +37,14 @@ csrf_protection = CsrfProtect(app)
 # import handlers
 import db
 
-# import server.handlers.users
+import application.handlers.public
 
 # Define our core bundles
 js_core = Bundle('js/core/core.js', filters='rjsmin', output='gen/core.js')
 assets.register('js_core', js_core)
 
-css_core = Bundle('css/core/reset.css', 'css/core/branding.css', filters='scss', output='gen/core.css')
+css_core = Bundle('css/core/reset.css', 'css/core/branding.css', 'css/core/modal.css', filters='scss', output='gen/core.css')
 assets.register('css_core', css_core)
 
 # use bcrypt for our passwords
 bcrypt = Bcrypt(app)
-
-@app.route("/", methods=["GET"])
-def main():
-    
-    return render_template("main.html")
