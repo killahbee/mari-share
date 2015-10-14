@@ -17,6 +17,7 @@ $modal-width: 400px;
 .curtain .modal .modal-content p { font-size: 14px; line-height: 1.4em; font-weight: 400; color: #404041; }
 .curtain .modal .modal-content label { margin-top: 20px; margin-bottom: 5px; display: block; font-size: 12px; font-weight: 600; color: #2b2b2b; text-align: left; }
 .curtain .modal .modal-content input { width: 100%; }
+.curtain .modal .modal-content textarea { width: 100%; min-height: 100px; }
 
 .curtain .modal .modal-icon { text-align: center; font-size: 60px; line-height: 100px; color: #ddd; color: $color-green; }
 .curtain .modal .modal-icon { margin-top: 20px; margin-bottom: 20px; width: 100px; border-radius: 100px; border: 1px solid $color-green; background-color: #fff; }

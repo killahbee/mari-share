@@ -39,12 +39,13 @@ import application.db
 
 import application.handlers.public
 import application.handlers.welcome
+import application.handlers.directory
 
 # Define our core bundles
 js_core = Bundle('js/core/Core.register.js', 'js/core/toolbelt.js', 'js/core/Core.modal.js', filters='rjsmin', output='gen/core.js')
 assets.register('js_core', js_core)
 
-css_core = Bundle('css/core/reset.css', 'css/vendor/animate.css', 'css/core/branding.css', 'css/core/modal.css', filters='scss', output='gen/core.css')
+css_core = Bundle('css/core/reset.css', 'css/vendor/animate.css', 'css/core/branding.css', 'css/core/navigation.css', 'css/core/modal.css', filters='scss', output='gen/core.css')
 assets.register('css_core', css_core)
 
 # use bcrypt for our passwords

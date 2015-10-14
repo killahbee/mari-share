@@ -1,0 +1,50 @@
+/*--------------------------------------------------------------
+1.0 - Colors
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+2.0 - Button Dimensions
+--------------------------------------------------------------*/
+@media -sass-debug-info{filename{}line{font-family:\000033}}
+body {
+  background-color: #187a51;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\000035}}
+.curtain {
+  background-color: #187a51;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\000036}}
+.curtain {
+  background: -moz-radial-gradient(center, ellipse cover, #187a51 0%, #104f35 100%);
+}
+
+@media -sass-debug-info{filename{}line{font-family:\000037}}
+.curtain {
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #187a51), color-stop(100%, #104f35));
+}
+
+@media -sass-debug-info{filename{}line{font-family:\000038}}
+.curtain {
+  background: -webkit-radial-gradient(center, ellipse cover, #187a51 0%, #104f35 100%);
+}
+
+@media -sass-debug-info{filename{}line{font-family:\000039}}
+.curtain {
+  background: -o-radial-gradient(center, ellipse cover, #187a51 0%, #104f35 100%);
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000310}}
+.curtain {
+  background: -ms-radial-gradient(center, ellipse cover, #187a51 0%, #104f35 100%);
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000311}}
+.curtain {
+  background: radial-gradient(ellipse at center, #187a51 0%, #104f35 100%);
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000312}}
+.curtain {
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#187a51', endColorstr='#104f35',GradientType=1 );
+}

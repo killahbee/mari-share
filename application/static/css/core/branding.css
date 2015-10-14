@@ -35,3 +35,9 @@ a.button { display: inline-block; text-decoration: none; }
 input[type="text"], input[type="password"] { margin: 0; padding: 0; border: none; box-sizing: border-box; }
 input[type="text"], input[type="password"] { height: $button-height; text-indent: 10px; border: 1px solid #ddd; }
 input[type="text"], input[type="password"] { outline-color: $color-green; }
+
+/*--------------------------------------------------------------
+4.0 - Textarea
+--------------------------------------------------------------*/
+textarea { margin: 0; padding: 0; border: none; box-sizing: border-box; }
+textarea { padding: 6px 6px; border: 1px solid #ddd; }

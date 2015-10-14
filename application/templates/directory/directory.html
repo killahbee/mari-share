@@ -1,0 +1,13 @@
+{% extends "auth_base.html" %}
+
+{% block local_css %}
+	{% assets filters="scss", output="gen/directory/directory.css", "css/directory/directory.css" %}
+		<link rel="stylesheet" href="{{ ASSET_URL }}">
+	{% endassets %}
+{% endblock %}
+
+{% block local_js %}
+{% endblock %}
+
+{% block page_content %}
+{% endblock %}

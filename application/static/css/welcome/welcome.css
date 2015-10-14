@@ -1,0 +1,12 @@
+@import "../utilities";
+
+body { background-color: $color-green; }
+
+.curtain { background-color: $color-green; }
+.curtain { background: -moz-radial-gradient(center, ellipse cover,  rgba(24,122,81,1) 0%, rgba(16,79,53,1) 100%); }
+.curtain { background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(24,122,81,1)), color-stop(100%,rgba(16,79,53,1))); }
+.curtain { background: -webkit-radial-gradient(center, ellipse cover,  rgba(24,122,81,1) 0%,rgba(16,79,53,1) 100%); }
+.curtain { background: -o-radial-gradient(center, ellipse cover,  rgba(24,122,81,1) 0%,rgba(16,79,53,1) 100%); }
+.curtain { background: -ms-radial-gradient(center, ellipse cover,  rgba(24,122,81,1) 0%,rgba(16,79,53,1) 100%); }
+.curtain { background: radial-gradient(ellipse at center,  rgba(24,122,81,1) 0%,rgba(16,79,53,1) 100%); }
+.curtain { filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#187a51', endColorstr='#104f35',GradientType=1 ); }
