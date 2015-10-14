@@ -7,6 +7,7 @@
 {% endblock %}
 
 {% block local_js %}
+	<script src="{{ url_for('static', filename='js/public/front_page.js') }}"></script>
 {% endblock %}
 
 {% block page_content %}
@@ -42,7 +43,7 @@
 	<header>
 		<div class="header-image" style="background-image: url('{{ url_for('static', filename='img/hero_img.jpg') }}');"></div>
 		<h1 class="animated bounceIn">Mari-Share</h1>
-		<a class="button green" href="#">Get a free account &raquo;</a>
+		<button class="button green" id="js-free-account-button" href="#">Get a free account &raquo;</button>
 	</header>
 
 	<div class="wrapper">
@@ -50,7 +51,7 @@
 		<div class="gray-box" id="How-it-works">PLaceholder text!</div>
 	</div>
 
-	<section class="curtain">
+	<section class="curtain" style="display: none;">
 		<div class="modal-container">
 			<div class="modal">
 

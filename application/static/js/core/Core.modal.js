@@ -2,14 +2,22 @@
 
 	"use strict";
 
+	var root = this;
 	var coreModal = {};
+	var _body = $("body");
 
 	coreModal.create = function ( modal_options ) {
 
-		var parent = $("<section/>");
+		var parent = $("<section/>")
+			.attr("class", "curtain")
 
 		var modal_html = "<div class='modal-container'>";
 		modal_html += "<div class='modal'>";
+
+		if ( modal_options.hasOwnProperty("form") ) {
+			modal_html += "<form method='" + modal_options["form-method"] + "' action='" + modal_options["form-action"] + "'>"
+		}
+
 		modal_html += "<div class='modal-content'>";
 
 		// icon
@@ -30,12 +38,6 @@
 		// form elements
 		if ( modal_options.hasOwnProperty("form") ) {
 			modal_html += modal_options["form"]
-			// modal_html += "<label>Email</label>";
-			// modal_html += "<input type='text' name='email'>";
-			// modal_html += "<label>Username</label>";
-			// modal_html += "<input type='text' name='username'>";
-			// modal_html += "<label>Password</label>";
-			// modal_html += "<input type='password' name='password'>";
 		}
 
 		// close modal-content
@@ -49,22 +51,36 @@
 		modal_html += "<button class='button blue'>" + modal_options["ok-button"] + "</button>";
 		modal_html += "</div>";
 
+		if ( modal_options.hasOwnProperty("form") ) {
+			modal_html += "</form>"
+		}
+
 		// close modal and modal-container
 		modal_html += "</div>";
 		modal_html += "</div>";
 
 		parent.html( modal_html );
 
+		if ( modal_options.hasOwnProperty("form") ) {
+			$("<input/>")
+				.attr("type", "hidden")
+				.attr("name", "_csrf_token")
+				.val( window.Tools.getCSRF() )
+				.appendTo( parent.find("form") );
+		}
+
+		parent.on("click", ".close-modal", function () {
+			parent.remove();
+		});
+
+		setTimeout(function () {
+			parent.find(".modal").addClass("show");
+		}, 200);
+
+		_body.append( parent );
+
 	}
 
-	return;
+	root.Core.register("modal", coreModal);
 
-	create({
-		"icon"			: "fa fa-leaf",
-		"title"			: "Let's do this!",
-		"description"	: "Network with the people that can take you high places.",
-		"form"			: "<label>Email</label><input type='text' name='email'><label>Username</label><input type='text' name='username'><label>Password</label><input type='password' name='password'>",
-		"ok-button"		: "Continue"
-	})
-
-})();
+}.call(this));
