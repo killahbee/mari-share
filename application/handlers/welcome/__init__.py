@@ -15,9 +15,12 @@ import application.tools as tools
 @application.app.route("/welcome/", methods=["GET"])
 @tools.dbauthenticated
 def welcome( user ):
+
+	neighborhoods = db.neighborhoods.getNeighborhoods()
 	
 	return render_template("welcome/welcome.html",
-		user=user)
+		user=user,
+		neighborhoods=neighborhoods)
 
 @application.app.route("/users/<userid>/", methods=["POST"])
 @tools.authenticated
@@ -27,7 +30,7 @@ def update_user( user, userid ):
 	description = request.form.get("description", "")
 	neighborhood = request.form.get("neighborhood", "")
 
-	if userid != user["id"]:
+	if userid != user["userid"]:
 		return "403", 403
 
 	try:
@@ -36,8 +39,8 @@ def update_user( user, userid ):
 		conn = db.get_db()
 		cur = conn.cursor()
 
-		sql_query = "INSERT INTO users (role, bio, neighborhood) VALUES (%s, %s, %s);"
-		sql_data = ( role, description, neighborhood )
+		sql_query = "UPDATE users SET role = %s, bio = %s, neighborhood = %s WHERE userid = %s;"
+		sql_data = ( role, description, neighborhood, userid )
 
 		cur.execute( sql_query, sql_data )
 

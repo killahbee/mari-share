@@ -1,0 +1,42 @@
+{% extends "auth_base.html" %}
+
+{% block local_css %}
+	{% assets filters="scss", output="gen/admin/neighborhoods.css", "css/admin/neighborhoods.css" %}
+		<link rel="stylesheet" href="{{ ASSET_URL }}">
+	{% endassets %}
+{% endblock %}
+
+{% block local_js %}
+{% endblock %}
+
+{% block page_content %}
+
+	<section class="neighborhoods-table">
+
+		<a class="button" href="/admin/neighborhoods/create/">Create a hood</a>
+
+		<div class="_table">
+
+			<table>
+
+				<thead>
+					<th>Hood ID</th>
+					<th>Hood Name</th>
+				</thead>
+
+				<tbody>
+					{% for hood in hoods %}
+					<tr>
+						<td>{{ hood["hoodid"] }}</td>
+						<td>{{ hood["name"] }}</td>
+					</tr>
+					{% endfor %}
+				</tbody>
+
+			</table>
+
+		</div>
+
+	</section>
+	
+{% endblock %}

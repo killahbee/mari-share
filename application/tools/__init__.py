@@ -44,6 +44,22 @@ def dbauthenticated(fn):
 		return fn(user=user_object, *args, **kwargs)
 	return _wrap
 
+def adminAuthenticated(fn):
+
+	@wraps(fn)
+	def _wrap(*args, **kwargs):
+
+		if "email" not in session:
+			return redirect(url_for('login', next=request.url))
+
+		user_object = db.user.get( session["userid"] )
+
+		if user_object["admin"] == False:
+			return redirect(url_for('dashboard'))
+
+		return fn(user=user_object, *args, **kwargs)
+	return _wrap
+
 def setCookie ( email=None, username=None, userid=None ):
 
 	if email == None or username == None or userid == None:

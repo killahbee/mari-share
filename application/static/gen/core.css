@@ -3119,6 +3119,118 @@ textarea {
   border: 1px solid #ddd;
 }
 
+/*--------------------------------------------------------------
+1.0 - Colors
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+2.0 - Button Dimensions
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+5.0 - Table
+--------------------------------------------------------------*/
+@media -sass-debug-info{filename{}line{font-family:\0000352}}
+._table {
+  border-radius: 6px;
+  overflow: hidden;
+  font-size: 13px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000353}}
+._table {
+  border: 1px solid #ddd;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000354}}
+._table table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: #fff;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000355}}
+._table table thead {
+  border-bottom: 1px solid #ddd;
+  background-color: #2f7bbd;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000357}}
+._table table thead th {
+  padding: 0 15px;
+  height: 46px;
+  font-size: 11px;
+  font-weight: 500;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000358}}
+._table table thead th {
+  border-left: 1px solid #ddd;
+  line-height: 46px;
+  height: auto;
+  font-weight: 700;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000359}}
+._table table thead th:first-child {
+  border-left: none;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000361}}
+._table table tbody tr {
+  line-height: 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000362}}
+._table table tbody tr:last-child {
+  border-bottom: none;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000364}}
+._table table tbody td {
+  padding: 0 15px;
+  font-weight: 400;
+  color: #2b2b2b;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000365}}
+._table table tbody td {
+  border-left: 1px solid #ddd;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000367}}
+._table table tbody td:first-child {
+  border-left: none;
+  border-radius: 2px 0 0 2px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000368}}
+._table table tbody td:last-child {
+  border-radius: 0 2px 2px 0;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000370}}
+._table table tbody td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000372}}
+._table table tbody td a {
+  text-decoration: none;
+}
+
+/* 3.3 - Table options */
+@media -sass-debug-info{filename{}line{font-family:\0000375}}
+._table.dynamic table {
+  table-layout: auto;
+}
+
 @media -sass-debug-info{filename{}line{font-family:\000031}}
 .page-navigation-bar {
   height: 60px;
@@ -3190,13 +3302,18 @@ body {
 }
 
 @media -sass-debug-info{filename{}line{font-family:\0000315}}
+.curtain .modal .close-modal {
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000317}}
 .curtain .modal .modal-content {
   padding: 20px 50px 40px 50px;
   text-align: center;
   background-color: #f9f9f9;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000316}}
+@media -sass-debug-info{filename{}line{font-family:\0000318}}
 .curtain .modal .modal-content h2 {
   margin-bottom: 5px;
   font-size: 17px;
@@ -3205,7 +3322,7 @@ body {
   color: #2b2b2b;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000317}}
+@media -sass-debug-info{filename{}line{font-family:\0000319}}
 .curtain .modal .modal-content p {
   font-size: 14px;
   line-height: 1.4em;
@@ -3213,7 +3330,7 @@ body {
   color: #404041;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000318}}
+@media -sass-debug-info{filename{}line{font-family:\0000320}}
 .curtain .modal .modal-content label {
   margin-top: 20px;
   margin-bottom: 5px;
@@ -3224,18 +3341,18 @@ body {
   text-align: left;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000319}}
+@media -sass-debug-info{filename{}line{font-family:\0000321}}
 .curtain .modal .modal-content input {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000320}}
+@media -sass-debug-info{filename{}line{font-family:\0000322}}
 .curtain .modal .modal-content textarea {
   width: 100%;
   min-height: 100px;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000322}}
+@media -sass-debug-info{filename{}line{font-family:\0000324}}
 .curtain .modal .modal-icon {
   text-align: center;
   font-size: 60px;
@@ -3244,7 +3361,7 @@ body {
   color: #187a51;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000323}}
+@media -sass-debug-info{filename{}line{font-family:\0000325}}
 .curtain .modal .modal-icon {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -3254,12 +3371,12 @@ body {
   background-color: #fff;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000324}}
+@media -sass-debug-info{filename{}line{font-family:\0000326}}
 .curtain .modal .modal-icon {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.35);
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000326}}
+@media -sass-debug-info{filename{}line{font-family:\0000328}}
 .curtain .modal .modal-foot {
   padding: 20px 0;
   text-align: center;
@@ -3269,7 +3386,7 @@ body {
 /*--------------------------------------------------------------
 2.0 - Animations
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{}line{font-family:\0000331}}
+@media -sass-debug-info{filename{}line{font-family:\0000333}}
 .curtain {
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
@@ -3277,14 +3394,14 @@ body {
   animation-fill-mode: both;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000332}}
+@media -sass-debug-info{filename{}line{font-family:\0000334}}
 .curtain {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
 
 /*.curtain .modal {  }*/
-@media -sass-debug-info{filename{}line{font-family:\0000335}}
+@media -sass-debug-info{filename{}line{font-family:\0000337}}
 .curtain .modal {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
@@ -3293,12 +3410,12 @@ body {
 /*--------------------------------------------------------------
 3.0 - Toggling
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{}line{font-family:\0000340}}
+@media -sass-debug-info{filename{}line{font-family:\0000342}}
 .curtain .modal.show {
   display: block;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000341}}
+@media -sass-debug-info{filename{}line{font-family:\0000343}}
 .curtain .modal.show {
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;

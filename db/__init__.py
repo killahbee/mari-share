@@ -11,6 +11,8 @@ from psycopg2.extensions import adapt, register_adapter, AsIs
 
 # import other db libraries
 import db.user as user
+import db.admin as admin
+import db.neighborhoods as neighborhoods
 
 def connect_db():
 	return psycopg2.connect(database=application.app.config["DB_NAME"],

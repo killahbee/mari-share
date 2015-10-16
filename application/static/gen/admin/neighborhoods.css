@@ -1,0 +1,10 @@
+@media -sass-debug-info{filename{}line{font-family:\000031}}
+.neighborhoods-table {
+  margin: 50px auto;
+  width: 800px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\000032}}
+.neighborhoods-table ._table {
+  margin-top: 10px;
+}

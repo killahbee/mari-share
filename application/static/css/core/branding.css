@@ -41,3 +41,35 @@ input[type="text"], input[type="password"] { outline-color: $color-green; }
 --------------------------------------------------------------*/
 textarea { margin: 0; padding: 0; border: none; box-sizing: border-box; }
 textarea { padding: 6px 6px; border: 1px solid #ddd; }
+
+@import "../utilities";
+
+/*--------------------------------------------------------------
+5.0 - Table
+--------------------------------------------------------------*/
+$table-bc: #ddd;
+
+._table { border-radius: 6px; overflow: hidden; font-size: 13px; }
+._table { border: 1px solid #ddd; }
+._table table { width: 100%; table-layout: fixed; border-collapse: collapse; border-spacing: 0; background-color: #fff; }
+._table table thead { border-bottom: 1px solid $table-bc; background-color: $color-blue; }
+
+._table table thead th { padding: 0 15px; height: 46px; font-size: 11px; font-weight: 500; text-align: left; color: #fff; text-transform: uppercase; }
+._table table thead th { border-left: 1px solid $table-bc; line-height: 46px; height: auto; font-weight: 700; }
+._table table thead th:first-child { border-left: none; }
+
+._table table tbody tr { line-height: 40px; border-bottom: 1px solid $table-bc; }
+._table table tbody tr:last-child { border-bottom: none; }
+
+._table table tbody td { padding: 0 15px; font-weight: 400; color: #2b2b2b; }
+._table table tbody td { border-left: 1px solid $table-bc; }
+
+._table table tbody td:first-child { border-left: none;  border-radius: 2px 0 0 2px; }
+._table table tbody td:last-child { border-radius: 0 2px 2px 0; }
+
+._table table tbody td { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+._table table tbody td a { text-decoration: none; }
+
+/* 3.3 - Table options */
+._table.dynamic table { table-layout: auto; }

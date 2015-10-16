@@ -37,8 +37,10 @@ csrf_protection = CsrfProtect(app)
 # import handlers
 import db
 
+import application.handlers.admin
 import application.handlers.public
 import application.handlers.welcome
+import application.handlers.dashboard
 import application.handlers.directory
 
 # Define our core bundles
