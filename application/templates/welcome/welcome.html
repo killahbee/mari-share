@@ -22,19 +22,19 @@
 					<h2>5 Easy Steps</h2>
 
 					<label>Neighborhood</label>
-					<input type="text" name="neighborhood">
+					<input type="text" name="neighborhood" value="{{ user["neighborhood"] }}">
 
 					<label>Role</label>
-					<input type="text" name="role">
+					<input type="text" name="role" value="{{ user["role"] }}">
 
 					<label>Profile Image</label>
-					<input type="text" name="profile-image">
+					<input type="text" name="profile-image" value="">
 
 					<label>Cover Image</label>
-					<input type="text" name="cover-image">
+					<input type="text" name="cover-image" value="">
 
 					<label>Description</label>
-					<textarea name="description"></textarea>
+					<textarea name="description">{{ user["description"] }}</textarea>
 
 				</div>
 

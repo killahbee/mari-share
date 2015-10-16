@@ -35,7 +35,7 @@ app.WTF_CSRF_TIME_LIMIT = 86400
 csrf_protection = CsrfProtect(app)
 
 # import handlers
-import application.db
+import db
 
 import application.handlers.public
 import application.handlers.welcome
@@ -53,7 +53,7 @@ bcrypt = Bcrypt(app)
 
 @app.teardown_request
 def teardown_request(exception):
-	db = getattr(g, 'db', None)
+	dbconn = getattr(g, 'db', None)
 
-	if db is not None:
-		db.close()
+	if dbconn is not None:
+		dbconn.close()

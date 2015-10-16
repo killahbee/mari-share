@@ -8,5 +8,13 @@ CREATE TABLE users (
     admin boolean DEFAULT FALSE,
     active boolean DEFAULT FALSE,
     email_confirmed boolean DEFAULT FALSE,
-    created timestamp DEFAULT CURRENT_TIMESTAMP
+    created timestamp DEFAULT CURRENT_TIMESTAMP,
+    role text DEFAULT '',
+    bio text DEFAULT '',
+    neighborhood uuid REFERENCES neighborhood(hoodid)
+);
+
+CREATE table neighborhood (
+	hoodid uuid PRIMARY KEY DEFAULT uuid_generate_v1(),
+	name text
 );
