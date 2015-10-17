@@ -14,15 +14,15 @@ $modal-width: 400px;
 
 .curtain .modal .close-modal { text-decoration: none; }
 
-.curtain .modal .modal-content { padding: 20px 50px 40px 50px; text-align: center; background-color: #f9f9f9; }
-.curtain .modal .modal-content h2 { margin-bottom: 5px; font-size: 17px; line-height: 1.4em; font-weight: 700; color: #2b2b2b; }
+.curtain .modal .modal-content { padding: 20px 50px 40px 50px; background-color: #f9f9f9; }
+.curtain .modal .modal-content h2 { margin-bottom: 5px; font-size: 17px; line-height: 1.4em; font-weight: 700; color: #2b2b2b; text-align: center; }
 .curtain .modal .modal-content p { font-size: 14px; line-height: 1.4em; font-weight: 400; color: #404041; }
 .curtain .modal .modal-content label { margin-top: 20px; margin-bottom: 5px; display: block; font-size: 12px; font-weight: 600; color: #2b2b2b; text-align: left; }
 .curtain .modal .modal-content input { width: 100%; }
 .curtain .modal .modal-content textarea { width: 100%; min-height: 100px; }
 
-.curtain .modal .modal-icon { text-align: center; font-size: 60px; line-height: 100px; color: #ddd; color: $color-green; }
-.curtain .modal .modal-icon { margin-top: 20px; margin-bottom: 20px; width: 100px; border-radius: 100px; border: 1px solid $color-green; background-color: #fff; }
+.curtain .modal .modal-icon { display: block; text-align: center; font-size: 60px; line-height: 100px; color: #ddd; color: $color-green; }
+.curtain .modal .modal-icon { margin: 20px auto; width: 100px; border-radius: 100px; border: 1px solid $color-green; background-color: #fff; }
 .curtain .modal .modal-icon { text-shadow: 0px -1px 0px rgba(0, 0, 0, .35); }
 
 .curtain .modal .modal-foot { padding: 20px 0; text-align: center; border-top: 1px solid #eee; }

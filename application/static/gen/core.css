@@ -2993,11 +2993,21 @@ body {
 }
 
 @media -sass-debug-info{filename{}line{font-family:\000038}}
+button {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\000039}}
+textarea, input {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000310}}
 .circle {
   border-radius: 1000px;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\000039}}
+@media -sass-debug-info{filename{}line{font-family:\0000311}}
 .clear-both {
   clear: both;
 }
@@ -3005,7 +3015,7 @@ body {
 /*--------------------------------------------------------------
 2.0 - Buttons
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{}line{font-family:\0000314}}
+@media -sass-debug-info{filename{}line{font-family:\0000316}}
 button {
   margin: 0;
   padding: 0;
@@ -3014,13 +3024,13 @@ button {
   outline: none;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000315}}
+@media -sass-debug-info{filename{}line{font-family:\0000317}}
 a.button {
   display: inline-block;
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000317}}
+@media -sass-debug-info{filename{}line{font-family:\0000319}}
 .button {
   cursor: pointer;
   padding: 0 20px;
@@ -3028,53 +3038,53 @@ a.button {
   border-radius: 3px;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000318}}
+@media -sass-debug-info{filename{}line{font-family:\0000320}}
 .button {
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000320}}
+@media -sass-debug-info{filename{}line{font-family:\0000322}}
 .button {
   background-color: #404041;
   color: #fff;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000321}}
+@media -sass-debug-info{filename{}line{font-family:\0000323}}
 .button:hover {
   background-color: #4f4f50;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000323}}
+@media -sass-debug-info{filename{}line{font-family:\0000325}}
 .button.blue {
   background-color: #2f7bbd;
   color: #fff;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000324}}
+@media -sass-debug-info{filename{}line{font-family:\0000326}}
 .button.blue:hover {
   background-color: #3c8acf;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000326}}
+@media -sass-debug-info{filename{}line{font-family:\0000328}}
 .button.green {
   background-color: #187a51;
   color: #fff;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000327}}
+@media -sass-debug-info{filename{}line{font-family:\0000329}}
 .button.green:hover {
   background-color: #1d9462;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000329}}
+@media -sass-debug-info{filename{}line{font-family:\0000331}}
 .button.invisible {
   background-color: transparent;
   color: #404041;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000330}}
+@media -sass-debug-info{filename{}line{font-family:\0000332}}
 .button.invisible:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -3082,7 +3092,7 @@ a.button {
 /*--------------------------------------------------------------
 3.0 - Inputs
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{}line{font-family:\0000335}}
+@media -sass-debug-info{filename{}line{font-family:\0000337}}
 input[type="text"], input[type="password"] {
   margin: 0;
   padding: 0;
@@ -3090,14 +3100,14 @@ input[type="text"], input[type="password"] {
   box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000336}}
+@media -sass-debug-info{filename{}line{font-family:\0000338}}
 input[type="text"], input[type="password"] {
   height: 36px;
   text-indent: 10px;
   border: 1px solid #ddd;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000337}}
+@media -sass-debug-info{filename{}line{font-family:\0000339}}
 input[type="text"], input[type="password"] {
   outline-color: #187a51;
 }
@@ -3105,7 +3115,7 @@ input[type="text"], input[type="password"] {
 /*--------------------------------------------------------------
 4.0 - Textarea
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{}line{font-family:\0000342}}
+@media -sass-debug-info{filename{}line{font-family:\0000344}}
 textarea {
   margin: 0;
   padding: 0;
@@ -3113,7 +3123,7 @@ textarea {
   box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000343}}
+@media -sass-debug-info{filename{}line{font-family:\0000345}}
 textarea {
   padding: 6px 6px;
   border: 1px solid #ddd;
@@ -3128,19 +3138,19 @@ textarea {
 /*--------------------------------------------------------------
 5.0 - Table
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{}line{font-family:\0000352}}
+@media -sass-debug-info{filename{}line{font-family:\0000354}}
 ._table {
   border-radius: 6px;
   overflow: hidden;
   font-size: 13px;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000353}}
+@media -sass-debug-info{filename{}line{font-family:\0000355}}
 ._table {
   border: 1px solid #ddd;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000354}}
+@media -sass-debug-info{filename{}line{font-family:\0000356}}
 ._table table {
   width: 100%;
   table-layout: fixed;
@@ -3149,13 +3159,13 @@ textarea {
   background-color: #fff;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000355}}
+@media -sass-debug-info{filename{}line{font-family:\0000357}}
 ._table table thead {
   border-bottom: 1px solid #ddd;
   background-color: #2f7bbd;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000357}}
+@media -sass-debug-info{filename{}line{font-family:\0000359}}
 ._table table thead th {
   padding: 0 15px;
   height: 46px;
@@ -3166,7 +3176,7 @@ textarea {
   text-transform: uppercase;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000358}}
+@media -sass-debug-info{filename{}line{font-family:\0000360}}
 ._table table thead th {
   border-left: 1px solid #ddd;
   line-height: 46px;
@@ -3174,61 +3184,207 @@ textarea {
   font-weight: 700;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000359}}
+@media -sass-debug-info{filename{}line{font-family:\0000361}}
 ._table table thead th:first-child {
   border-left: none;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000361}}
+@media -sass-debug-info{filename{}line{font-family:\0000363}}
 ._table table tbody tr {
   line-height: 40px;
   border-bottom: 1px solid #ddd;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000362}}
+@media -sass-debug-info{filename{}line{font-family:\0000364}}
 ._table table tbody tr:last-child {
   border-bottom: none;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000364}}
+@media -sass-debug-info{filename{}line{font-family:\0000366}}
 ._table table tbody td {
   padding: 0 15px;
   font-weight: 400;
   color: #2b2b2b;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000365}}
+@media -sass-debug-info{filename{}line{font-family:\0000367}}
 ._table table tbody td {
   border-left: 1px solid #ddd;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000367}}
+@media -sass-debug-info{filename{}line{font-family:\0000369}}
 ._table table tbody td:first-child {
   border-left: none;
   border-radius: 2px 0 0 2px;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000368}}
+@media -sass-debug-info{filename{}line{font-family:\0000370}}
 ._table table tbody td:last-child {
   border-radius: 0 2px 2px 0;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000370}}
+@media -sass-debug-info{filename{}line{font-family:\0000372}}
 ._table table tbody td {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000372}}
+@media -sass-debug-info{filename{}line{font-family:\0000374}}
 ._table table tbody td a {
   text-decoration: none;
 }
 
 /* 3.3 - Table options */
-@media -sass-debug-info{filename{}line{font-family:\0000375}}
+@media -sass-debug-info{filename{}line{font-family:\0000377}}
 ._table.dynamic table {
   table-layout: auto;
+}
+
+/*--------------------------------------------------------------
+6.0 - Select Area
+--------------------------------------------------------------*/
+@media -sass-debug-info{filename{}line{font-family:\0000385}}
+._select {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000386}}
+._select {
+  height: 34px;
+  width: 200px;
+  vertical-align: top;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000387}}
+._select .select-box {
+  padding: 0 30px 0 10px;
+  height: 34px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000388}}
+._select .select-box {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000389}}
+._select .drop-arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 100%;
+  border-left: 1px solid #eee;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000390}}
+._select .drop-arrow {
+  text-align: center;
+  line-height: 34px;
+  color: #2f7bbd;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000391}}
+._select .current-value {
+  font-size: 12px;
+  line-height: 34px;
+  color: #555;
+  line-height: 32px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000393}}
+._select .drop-box {
+  display: none;
+  position: absolute;
+  padding: 3px 0;
+  top: 39px;
+  left: 0;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000394}}
+._select .drop-box {
+  max-height: 250px;
+  overflow: auto;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000395}}
+._select .drop-box {
+  animation-duration: 0.15s;
+  animation-fill-mode: both;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000396}}
+._select .drop-box {
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000397}}
+._select .drop-box {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000398}}
+._select .drop-box .option-group {
+  margin-top: 5px;
+  padding-left: 10px;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #2f7bbd;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000399}}
+._select .drop-box .option-group:first-child {
+  margin-top: 0;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003100}}
+._select .drop-box .select-item {
+  cursor: pointer;
+  padding-left: 10px;
+  font-size: 12px;
+  line-height: 30px;
+  min-height: 30px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003101}}
+._select .drop-box .select-item {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  text-align: left;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003102}}
+._select .drop-box .select-item:hover {
+  background-color: #f5f5f5;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003104}}
+._select.reverse-drop .drop-box {
+  top: auto;
+  bottom: 39px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003106}}
+._select.show--drop .drop-box {
+  display: block;
+  z-index: 10;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003107}}
+._select.show--drop .drop-box {
+  animation-name: makemodalvisible;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003109}}
+._select.reverse-drop .drop-box {
+  animation-name: makemodalvisiblereverse;
 }
 
 @media -sass-debug-info{filename{}line{font-family:\000031}}
@@ -3309,7 +3465,6 @@ body {
 @media -sass-debug-info{filename{}line{font-family:\0000317}}
 .curtain .modal .modal-content {
   padding: 20px 50px 40px 50px;
-  text-align: center;
   background-color: #f9f9f9;
 }
 
@@ -3320,6 +3475,7 @@ body {
   line-height: 1.4em;
   font-weight: 700;
   color: #2b2b2b;
+  text-align: center;
 }
 
 @media -sass-debug-info{filename{}line{font-family:\0000319}}
@@ -3354,6 +3510,7 @@ body {
 
 @media -sass-debug-info{filename{}line{font-family:\0000324}}
 .curtain .modal .modal-icon {
+  display: block;
   text-align: center;
   font-size: 60px;
   line-height: 100px;
@@ -3363,8 +3520,7 @@ body {
 
 @media -sass-debug-info{filename{}line{font-family:\0000325}}
 .curtain .modal .modal-icon {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px auto;
   width: 100px;
   border-radius: 100px;
   border: 1px solid #187a51;

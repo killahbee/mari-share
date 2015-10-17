@@ -5,6 +5,8 @@
 --------------------------------------------------------------*/
 * { position: relative; }
 body { font-family: 'Open Sans', sans-serif; }
+button { font-family: 'Open Sans', sans-serif; }
+textarea, input { font-family: 'Open Sans', sans-serif; }
 .circle { border-radius: 1000px; }
 .clear-both { clear: both; }
 
@@ -73,3 +75,35 @@ $table-bc: #ddd;
 
 /* 3.3 - Table options */
 ._table.dynamic table { table-layout: auto; }
+
+/*--------------------------------------------------------------
+6.0 - Select Area
+--------------------------------------------------------------*/
+$select-height: 34px;
+$select-drop: 5px;
+
+._select { display: inline-block; box-sizing: border-box; }
+._select { height: $select-height; width: 200px; vertical-align: top; }
+._select .select-box { padding: 0 30px 0 10px; height: $select-height; }
+._select .select-box { border: 1px solid #ddd; border-radius: 2px; background-color: #fff; }
+._select .drop-arrow { position: absolute; top: 0; right: 0; width: 20px; height: 100%; border-left: 1px solid #eee; }
+._select .drop-arrow { text-align: center; line-height: $select-height; color: $color-blue; }
+._select .current-value { font-size: 12px; line-height: $select-height; color: #555; line-height: $select-height - 2px; }
+
+._select .drop-box { display: none; position: absolute; padding: 3px 0; top: $select-height + $select-drop; left: 0; width: 100%; }
+._select .drop-box { max-height: 250px; overflow: auto; }
+._select .drop-box { animation-duration: 0.15s; animation-fill-mode: both; }
+._select .drop-box { box-sizing: border-box; border-radius: 2px; background-color: #fff; }
+._select .drop-box { box-shadow: 0 0 3px rgba(0, 0, 0, .2); }
+._select .drop-box .option-group { margin-top: 5px; padding-left: 10px; font-size: 12px; line-height: 24px; font-weight: 600; color: $color-blue; }
+._select .drop-box .option-group:first-child { margin-top: 0; }
+._select .drop-box .select-item { cursor: pointer; padding-left: 10px; font-size: 12px; line-height: 30px; min-height: 30px; }
+._select .drop-box .select-item { border-top: 1px solid #fff; border-bottom: 1px solid #fff; text-align: left; }
+._select .drop-box .select-item:hover { background-color: #f5f5f5; }
+
+._select.reverse-drop .drop-box { top: auto; bottom: $select-height + $select-drop; }
+
+._select.show--drop .drop-box { display: block; z-index: 10; }
+._select.show--drop .drop-box { animation-name: makemodalvisible; }
+
+._select.reverse-drop .drop-box { animation-name: makemodalvisiblereverse; }
