@@ -1,6 +1,6 @@
 @import "../utilities";
 
-$profile-width: 700px;
+$profile-width: 600px;
 
 /*--------------------------------------------------------------
 1.0 - Base
@@ -23,15 +23,16 @@ $profile-width: 700px;
 /*--------------------------------------------------------------
 3.0 - Credibillity
 --------------------------------------------------------------*/
-.credibillity-rating { margin-top: 5px; }
-.credibillity-rating label { display: inline-block; margin-right: 5px; font-size: 12px; color: #666; }
+$leaf-width: 20px;
 .credibillity-rating .rating { display: inline-block; color: #ccc; }
 .credibillity-rating .rating.active { color: $color-green; }
 
 /*--------------------------------------------------------------
 4.0 - About User
 --------------------------------------------------------------*/
+$label-width: 60px;
+
 .about-user { margin-top: 5px; }
 .about-user .detail {}
-.about-user .detail .label { float: left; width: 80px; font-size: 13px; line-height: 20px; font-weight: 600; color: #666; text-align: right; }
-.about-user .detail .value { margin-left: 100px; font-size: 15px; line-height: 20px; font-weight: 300; color: #2b2b2b; }
+.about-user .detail .label { float: left; width: $label-width; font-size: 12px; line-height: 20px; font-weight: 400; color: #666; text-align: right; }
+.about-user .detail .value { margin-left: $label-width + 20px; font-size: 15px; line-height: 20px; font-weight: 300; color: #2b2b2b; }

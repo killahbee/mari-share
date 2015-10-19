@@ -1,0 +1,96 @@
+/*--------------------------------------------------------------
+1.0 - Colors
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+2.0 - Button Dimensions
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+1.0 - Base
+--------------------------------------------------------------*/
+@media -sass-debug-info{filename{}line{font-family:\000036}}
+.directory-wrapper {
+  margin: 30px auto;
+  width: 750px;
+}
+
+/*--------------------------------------------------------------
+2.0 - User Card
+--------------------------------------------------------------*/
+@media -sass-debug-info{filename{}line{font-family:\0000316}}
+.user-card {
+  margin-bottom: 20px;
+  float: left;
+  display: block;
+  width: 250px;
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000317}}
+.user-card .card-content {
+  margin: 0 10px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000318}}
+.user-card .card-content .user-cover {
+  width: 100%;
+  height: 76.66667px;
+  background-color: #ddd;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000319}}
+.user-card .card-content .user-cover img.cover {
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000320}}
+.user-card .card-content .user-cover .user-image {
+  position: absolute;
+  bottom: -30px;
+  left: 83px;
+  height: 60px;
+  width: 60px;
+  background-color: #fff;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000321}}
+.user-card .card-content .user-cover .user-image {
+  border-radius: 100px;
+  border: 2px solid #fff;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000322}}
+.user-card .card-content .user-cover .user-image .avatar {
+  width: 100%;
+  border-radius: 100px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000323}}
+.user-card .card-content .user-content {
+  margin: 40px 20px 30px 20px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000325}}
+.user-card .username {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #2b2b2b;
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000326}}
+.user-card .role {
+  font-size: 14px;
+  font-weight: 300;
+  color: #404041;
+  text-align: center;
+}
+
+/* hover effects */
+@media -sass-debug-info{filename{}line{font-family:\0000329}}
+.user-card:hover .username {
+  color: #2f7bbd;
+}

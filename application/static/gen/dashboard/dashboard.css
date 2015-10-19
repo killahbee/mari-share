@@ -15,7 +15,7 @@
 @media -sass-debug-info{filename{}line{font-family:\000039}}
 .profile-wrapper {
   margin: 0 auto;
-  width: 700px;
+  width: 600px;
   background-color: #fff;
   border-radius: 6px;
   overflow: hidden;
@@ -34,7 +34,7 @@
 @media -sass-debug-info{filename{}line{font-family:\0000313}}
 .profile-cover {
   width: 100%;
-  height: 233.33333px;
+  height: 200px;
   background-color: #ddd;
 }
 
@@ -77,26 +77,13 @@
 /*--------------------------------------------------------------
 3.0 - Credibillity
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{}line{font-family:\0000326}}
-.credibillity-rating {
-  margin-top: 5px;
-}
-
 @media -sass-debug-info{filename{}line{font-family:\0000327}}
-.credibillity-rating label {
-  display: inline-block;
-  margin-right: 5px;
-  font-size: 12px;
-  color: #666;
-}
-
-@media -sass-debug-info{filename{}line{font-family:\0000328}}
 .credibillity-rating .rating {
   display: inline-block;
   color: #ccc;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000329}}
+@media -sass-debug-info{filename{}line{font-family:\0000328}}
 .credibillity-rating .rating.active {
   color: #187a51;
 }
@@ -104,25 +91,25 @@
 /*--------------------------------------------------------------
 4.0 - About User
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{}line{font-family:\0000334}}
+@media -sass-debug-info{filename{}line{font-family:\0000335}}
 .about-user {
   margin-top: 5px;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000336}}
+@media -sass-debug-info{filename{}line{font-family:\0000337}}
 .about-user .detail .label {
   float: left;
-  width: 80px;
-  font-size: 13px;
+  width: 60px;
+  font-size: 12px;
   line-height: 20px;
-  font-weight: 600;
+  font-weight: 400;
   color: #666;
   text-align: right;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000337}}
+@media -sass-debug-info{filename{}line{font-family:\0000338}}
 .about-user .detail .value {
-  margin-left: 100px;
+  margin-left: 80px;
   font-size: 15px;
   line-height: 20px;
   font-weight: 300;

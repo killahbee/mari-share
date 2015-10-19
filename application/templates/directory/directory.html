@@ -10,4 +10,30 @@
 {% endblock %}
 
 {% block page_content %}
+	<section class="directory-wrapper">
+
+		{% for user in users %}
+			<a href="#" class="user-card">
+				<div class="card-content">
+
+					<div class="user-cover">
+						<img class="cover" src="/static/img/placeholders/cover-a.jpg">
+
+						<div class="user-image">
+							<img class="avatar" src="/static/img/logo.jpg">
+						</div>
+					</div>
+
+					<div class="user-content">
+						<h1 class="username">{{ user["username"] }}</h1>
+						<div class="role">{{ user["role"] }}</div>
+					</div>
+
+				</div>
+			</a>
+		{% endfor %}
+
+		<div class="cb"></div>
+
+	</section>
 {% endblock %}

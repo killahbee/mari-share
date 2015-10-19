@@ -1,0 +1,29 @@
+@import "../utilities";
+
+/*--------------------------------------------------------------
+1.0 - Base
+--------------------------------------------------------------*/
+.directory-wrapper { margin: 30px auto; width: 750px; }
+
+/*--------------------------------------------------------------
+2.0 - User Card
+--------------------------------------------------------------*/
+$card-width: 250px;
+$card-spacing: 10px;
+$card-container: ($card-width - (2 * $card-spacing));
+$user-avatar: 60px;
+
+.user-card { margin-bottom: 20px; float: left; display: block; width: $card-width; text-decoration: none; }
+.user-card .card-content { margin: 0 $card-spacing; border-radius: 6px; overflow: hidden; background-color: #fff; }
+.user-card .card-content .user-cover { width: 100%; height: $card-container/3; background-color: #ddd; }
+.user-card .card-content .user-cover img.cover { width: 100%; }
+.user-card .card-content .user-cover .user-image { position: absolute; bottom: -30px; left: ($card-container - $user-avatar - 4)/2; height: $user-avatar; width: $user-avatar; background-color: #fff; }
+.user-card .card-content .user-cover .user-image { border-radius: 100px; border: 2px solid #fff; }
+.user-card .card-content .user-cover .user-image .avatar { width: 100%; border-radius: 100px; }
+.user-card .card-content .user-content { margin: 40px 20px 30px 20px; }
+
+.user-card .username { font-size: 15px; line-height: 25px; font-weight: 600; color: #2b2b2b; text-align: center; }
+.user-card .role { font-size: 14px; font-weight: 300; color: #404041; text-align: center; }
+
+/* hover effects */
+.user-card:hover .username { color: $color-blue; }

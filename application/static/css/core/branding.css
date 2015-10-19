@@ -8,7 +8,7 @@ body { font-family: 'Open Sans', sans-serif; }
 button { font-family: 'Open Sans', sans-serif; }
 textarea, input { font-family: 'Open Sans', sans-serif; }
 .circle { border-radius: 1000px; }
-.clear-both { clear: both; }
+.clear-both, .cb { clear: both; }
 
 /*--------------------------------------------------------------
 2.0 - Buttons

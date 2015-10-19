@@ -3008,7 +3008,7 @@ textarea, input {
 }
 
 @media -sass-debug-info{filename{}line{font-family:\0000311}}
-.clear-both {
+.clear-both, .cb {
   clear: both;
 }
 
