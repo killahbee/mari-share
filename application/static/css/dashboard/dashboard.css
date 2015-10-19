@@ -1,0 +1,37 @@
+@import "../utilities";
+
+$profile-width: 700px;
+
+/*--------------------------------------------------------------
+1.0 - Base
+--------------------------------------------------------------*/
+.dashboard-wrapper { margin: 40px 50px; }
+.profile-wrapper { margin: 0 auto; width: $profile-width; background-color: #fff; border-radius: 6px; overflow: hidden; }
+.profile-content { margin: 30px 50px 0 50px; }
+.profile-foot { height: 50px; }
+
+.profile-cover { width: 100%; height: $profile-width/3; background-color: #ddd; }
+.profile-cover img.cover { width: 100%; }
+.profile-cover .user-image { position: absolute; bottom: -30px; right: 20px; width: 100px; height: 100px; background-color: #fff; border-radius: 200px; }
+.profile-cover .user-image img { position: absolute; top: 5px; left: 5px; width: 90px; height: 90px; border-radius: 200px; }
+
+/*--------------------------------------------------------------
+2.0 - User Profile
+--------------------------------------------------------------*/
+.username { font-size: 30px; font-weight: 700; color: #404041; }
+
+/*--------------------------------------------------------------
+3.0 - Credibillity
+--------------------------------------------------------------*/
+.credibillity-rating { margin-top: 5px; }
+.credibillity-rating label { display: inline-block; margin-right: 5px; font-size: 12px; color: #666; }
+.credibillity-rating .rating { display: inline-block; color: #ccc; }
+.credibillity-rating .rating.active { color: $color-green; }
+
+/*--------------------------------------------------------------
+4.0 - About User
+--------------------------------------------------------------*/
+.about-user { margin-top: 5px; }
+.about-user .detail {}
+.about-user .detail .label { float: left; width: 80px; font-size: 13px; line-height: 20px; font-weight: 600; color: #666; text-align: right; }
+.about-user .detail .value { margin-left: 100px; font-size: 15px; line-height: 20px; font-weight: 300; color: #2b2b2b; }

@@ -10,4 +10,55 @@
 {% endblock %}
 
 {% block page_content %}
+
+	<section class="dashboard-wrapper">
+
+		<section class="profile-wrapper">
+
+			<section class="profile-cover">
+				<img class="cover" src="/static/img/placeholders/cover-a.jpg">
+
+				<div class="user-image">
+					<img class="avatar" src="/static/img/logo.jpg">
+				</div>
+			</section>
+
+			<section class="profile-content">
+
+				<h1 class="username">{{ user["username"] }}</h1>
+
+				<div class="credibillity-rating">
+					<label>Rating</label>
+					<div class="rating fa fa-leaf active"></div>
+					<div class="rating fa fa-leaf active"></div>
+					<div class="rating fa fa-leaf active"></div>
+					<div class="rating fa fa-leaf"></div>
+					<div class="rating fa fa-leaf"></div>
+				</div>
+
+				<section class="about-user">
+
+					<div class="detail">
+						<div class="label">Role</div>
+						<div class="value">{{ user["role"] }}</div>
+					</div>
+
+					<div class="detail">
+						<div class="label">Bio</div>
+						<div class="value">{{ user["bio"] }}</div>
+					</div>
+
+				</section>
+
+			</section>
+
+			<section class="profile-foot">
+			</section>
+
+		</section>
+
+		<!-- {{ user }} -->
+
+	</section>
+
 {% endblock %}

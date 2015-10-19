@@ -12,7 +12,8 @@ import application
 import application.tools as tools
 
 @application.app.route("/dashboard/", methods=["GET"])
-@tools.authenticated
+@tools.dbauthenticated
 def dashboard( user ):
     
-    return render_template("dashboard/dashboard.html")
+    return render_template("dashboard/dashboard.html",
+    	user=user)
