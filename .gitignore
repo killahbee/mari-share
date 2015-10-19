@@ -1,3 +1,16 @@
 setup.txt
+
+venv
+
 config.py
-.pyc
+*.pyc
+
+.DS_Store
+
+gen
+.webassets-cache
+
+gmail-api.json
+gmail-oauth.json
+salesforce-oauth.json
+*.hidden
