@@ -13,14 +13,14 @@ import application
 import application.tools as tools
 
 @application.app.route("/dashboard/", methods=["GET"])
-@application.app.route("/dashboard/<userid>/", methods=["GET"])
+@application.app.route("/dashboard/<username>/", methods=["GET"])
 @tools.authenticated
-def dashboard( user, userid ):
+def dashboard( user, username ):
 
-	if userid == None:
-		userid = user["userid"]
+	if username == None:
+		username = user["username"]
 
-	profile_user = db.user.get( userid )
+	profile_user = db.user.get( username )
 	
 	return render_template("dashboard/dashboard.html",
 		user=user,
