@@ -3090,9 +3090,144 @@ a.button {
 }
 
 /*--------------------------------------------------------------
-3.0 - Inputs
+2.0 - Upload Buttons
 --------------------------------------------------------------*/
 @media -sass-debug-info{filename{}line{font-family:\0000337}}
+.upload-button {
+  display: inline-block;
+  padding: 0 20px;
+  height: 36px;
+  border-radius: 40px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000338}}
+.upload-button {
+  background-color: #2f7bbd;
+  color: #fff;
+  width: 70px;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000341}}
+.upload-button .icon-circle {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000342}}
+.upload-button .icon-circle {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000343}}
+.upload-button .icon-circle {
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000345}}
+.upload-button .icon-circle .fa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000346}}
+.upload-button .icon-circle .fa {
+  line-height: 16px;
+  text-align: center;
+  font-size: 12px;
+  color: #2f7bbd;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000347}}
+.upload-button .success {
+  display: none;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000348}}
+.upload-button .loading {
+  display: none;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000350}}
+.upload-button .button-text {
+  margin-left: 20px;
+  line-height: 36px;
+  font-size: 14px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000352}}
+.upload-button.loading .icon-circle {
+  background-color: transparent;
+  border-color: #fff #fff #fff transparent;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000353}}
+.upload-button.loading .icon-circle {
+  -webkit-animation: loading-button-spin 0.75s infinite linear;
+  animation: loading-button-spin 0.75s infinite linear;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000354}}
+.upload-button.loading .default {
+  display: none;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000355}}
+.upload-button.loading .loading {
+  display: block;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000357}}
+.upload-button.success {
+  background-color: #31AA39;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000358}}
+.upload-button.success .icon-circle {
+  background-color: #fff;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000359}}
+.upload-button.success .icon-circle .fa {
+  color: #31AA39;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000360}}
+.upload-button.success .default {
+  display: none;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000361}}
+.upload-button.success .success {
+  display: block;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000363}}
+.upload-button.error {
+  background-color: #FE6965;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000364}}
+.upload-button.error .icon-circle {
+  background-color: #fff;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000365}}
+.upload-button.error .icon-circle .fa {
+  color: #FE6965;
+}
+
+/*--------------------------------------------------------------
+3.0 - Inputs
+--------------------------------------------------------------*/
+@media -sass-debug-info{filename{}line{font-family:\0000370}}
 input[type="text"], input[type="password"] {
   margin: 0;
   padding: 0;
@@ -3100,14 +3235,14 @@ input[type="text"], input[type="password"] {
   box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000338}}
+@media -sass-debug-info{filename{}line{font-family:\0000371}}
 input[type="text"], input[type="password"] {
   height: 36px;
   text-indent: 10px;
   border: 1px solid #ddd;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000339}}
+@media -sass-debug-info{filename{}line{font-family:\0000372}}
 input[type="text"], input[type="password"] {
   outline-color: #187a51;
 }
@@ -3115,7 +3250,7 @@ input[type="text"], input[type="password"] {
 /*--------------------------------------------------------------
 4.0 - Textarea
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{}line{font-family:\0000344}}
+@media -sass-debug-info{filename{}line{font-family:\0000377}}
 textarea {
   margin: 0;
   padding: 0;
@@ -3123,7 +3258,7 @@ textarea {
   box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000345}}
+@media -sass-debug-info{filename{}line{font-family:\0000378}}
 textarea {
   padding: 6px 6px;
   border: 1px solid #ddd;
@@ -3138,19 +3273,19 @@ textarea {
 /*--------------------------------------------------------------
 5.0 - Table
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{}line{font-family:\0000354}}
+@media -sass-debug-info{filename{}line{font-family:\0000387}}
 ._table {
   border-radius: 6px;
   overflow: hidden;
   font-size: 13px;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000355}}
+@media -sass-debug-info{filename{}line{font-family:\0000388}}
 ._table {
   border: 1px solid #ddd;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000356}}
+@media -sass-debug-info{filename{}line{font-family:\0000389}}
 ._table table {
   width: 100%;
   table-layout: fixed;
@@ -3159,13 +3294,13 @@ textarea {
   background-color: #fff;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000357}}
+@media -sass-debug-info{filename{}line{font-family:\0000390}}
 ._table table thead {
   border-bottom: 1px solid #ddd;
   background-color: #2f7bbd;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000359}}
+@media -sass-debug-info{filename{}line{font-family:\0000392}}
 ._table table thead th {
   padding: 0 15px;
   height: 46px;
@@ -3176,7 +3311,7 @@ textarea {
   text-transform: uppercase;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000360}}
+@media -sass-debug-info{filename{}line{font-family:\0000393}}
 ._table table thead th {
   border-left: 1px solid #ddd;
   line-height: 46px;
@@ -3184,59 +3319,59 @@ textarea {
   font-weight: 700;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000361}}
+@media -sass-debug-info{filename{}line{font-family:\0000394}}
 ._table table thead th:first-child {
   border-left: none;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000363}}
+@media -sass-debug-info{filename{}line{font-family:\0000396}}
 ._table table tbody tr {
   line-height: 40px;
   border-bottom: 1px solid #ddd;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000364}}
+@media -sass-debug-info{filename{}line{font-family:\0000397}}
 ._table table tbody tr:last-child {
   border-bottom: none;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000366}}
+@media -sass-debug-info{filename{}line{font-family:\0000399}}
 ._table table tbody td {
   padding: 0 15px;
   font-weight: 400;
   color: #2b2b2b;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000367}}
+@media -sass-debug-info{filename{}line{font-family:\00003100}}
 ._table table tbody td {
   border-left: 1px solid #ddd;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000369}}
+@media -sass-debug-info{filename{}line{font-family:\00003102}}
 ._table table tbody td:first-child {
   border-left: none;
   border-radius: 2px 0 0 2px;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000370}}
+@media -sass-debug-info{filename{}line{font-family:\00003103}}
 ._table table tbody td:last-child {
   border-radius: 0 2px 2px 0;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000372}}
+@media -sass-debug-info{filename{}line{font-family:\00003105}}
 ._table table tbody td {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000374}}
+@media -sass-debug-info{filename{}line{font-family:\00003107}}
 ._table table tbody td a {
   text-decoration: none;
 }
 
 /* 3.3 - Table options */
-@media -sass-debug-info{filename{}line{font-family:\0000377}}
+@media -sass-debug-info{filename{}line{font-family:\00003110}}
 ._table.dynamic table {
   table-layout: auto;
 }
@@ -3244,33 +3379,33 @@ textarea {
 /*--------------------------------------------------------------
 6.0 - Select Area
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{}line{font-family:\0000385}}
+@media -sass-debug-info{filename{}line{font-family:\00003118}}
 ._select {
   display: inline-block;
   box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000386}}
+@media -sass-debug-info{filename{}line{font-family:\00003119}}
 ._select {
   height: 34px;
   width: 200px;
   vertical-align: top;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000387}}
+@media -sass-debug-info{filename{}line{font-family:\00003120}}
 ._select .select-box {
   padding: 0 30px 0 10px;
   height: 34px;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000388}}
+@media -sass-debug-info{filename{}line{font-family:\00003121}}
 ._select .select-box {
   border: 1px solid #ddd;
   border-radius: 2px;
   background-color: #fff;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000389}}
+@media -sass-debug-info{filename{}line{font-family:\00003122}}
 ._select .drop-arrow {
   position: absolute;
   top: 0;
@@ -3280,14 +3415,14 @@ textarea {
   border-left: 1px solid #eee;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000390}}
+@media -sass-debug-info{filename{}line{font-family:\00003123}}
 ._select .drop-arrow {
   text-align: center;
   line-height: 34px;
   color: #2f7bbd;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000391}}
+@media -sass-debug-info{filename{}line{font-family:\00003124}}
 ._select .current-value {
   font-size: 12px;
   line-height: 34px;
@@ -3295,7 +3430,7 @@ textarea {
   line-height: 32px;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000393}}
+@media -sass-debug-info{filename{}line{font-family:\00003126}}
 ._select .drop-box {
   display: none;
   position: absolute;
@@ -3305,31 +3440,31 @@ textarea {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000394}}
+@media -sass-debug-info{filename{}line{font-family:\00003127}}
 ._select .drop-box {
   max-height: 250px;
   overflow: auto;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000395}}
+@media -sass-debug-info{filename{}line{font-family:\00003128}}
 ._select .drop-box {
   animation-duration: 0.15s;
   animation-fill-mode: both;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000396}}
+@media -sass-debug-info{filename{}line{font-family:\00003129}}
 ._select .drop-box {
   box-sizing: border-box;
   border-radius: 2px;
   background-color: #fff;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000397}}
+@media -sass-debug-info{filename{}line{font-family:\00003130}}
 ._select .drop-box {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000398}}
+@media -sass-debug-info{filename{}line{font-family:\00003131}}
 ._select .drop-box .option-group {
   margin-top: 5px;
   padding-left: 10px;
@@ -3339,12 +3474,12 @@ textarea {
   color: #2f7bbd;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000399}}
+@media -sass-debug-info{filename{}line{font-family:\00003132}}
 ._select .drop-box .option-group:first-child {
   margin-top: 0;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\00003100}}
+@media -sass-debug-info{filename{}line{font-family:\00003133}}
 ._select .drop-box .select-item {
   cursor: pointer;
   padding-left: 10px;
@@ -3353,36 +3488,36 @@ textarea {
   min-height: 30px;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\00003101}}
+@media -sass-debug-info{filename{}line{font-family:\00003134}}
 ._select .drop-box .select-item {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   text-align: left;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\00003102}}
+@media -sass-debug-info{filename{}line{font-family:\00003135}}
 ._select .drop-box .select-item:hover {
   background-color: #f5f5f5;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\00003104}}
+@media -sass-debug-info{filename{}line{font-family:\00003137}}
 ._select.reverse-drop .drop-box {
   top: auto;
   bottom: 39px;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\00003106}}
+@media -sass-debug-info{filename{}line{font-family:\00003139}}
 ._select.show--drop .drop-box {
   display: block;
   z-index: 10;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\00003107}}
+@media -sass-debug-info{filename{}line{font-family:\00003140}}
 ._select.show--drop .drop-box {
   animation-name: makemodalvisible;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\00003109}}
+@media -sass-debug-info{filename{}line{font-family:\00003142}}
 ._select.reverse-drop .drop-box {
   animation-name: makemodalvisiblereverse;
 }
@@ -3577,4 +3712,127 @@ body {
   animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+
+/*--------------------------------------------------------------
+1.0 - Colors
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+2.0 - Button Dimensions
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+1.0 - Loading
+--------------------------------------------------------------*/
+@media -sass-debug-info{filename{}line{font-family:\000037}}
+.application-loading {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: purple;
+  border-radius: 4px;
+  z-index: 99999;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\000038}}
+.application-loading img {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+/*--------------------------------------------------------------
+2.0 - Success
+--------------------------------------------------------------*/
+@media -sass-debug-info{filename{}line{font-family:\0000314}}
+.application-success {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #187a51;
+  border-radius: 4px;
+  z-index: 99999;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000315}}
+.application-success img {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000316}}
+.application-success .fa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+3.0 - Error
+--------------------------------------------------------------*/
+@media -sass-debug-info{filename{}line{font-family:\0000322}}
+.application-error {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #FE6965;
+  border-radius: 4px;
+  z-index: 99999;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000323}}
+.application-error img {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000324}}
+.application-error .fa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+}
+
+@-webkit-keyframes loading-button-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes loading-button-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
 }

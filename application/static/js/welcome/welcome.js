@@ -3,12 +3,14 @@
 
 	"use strict";
 
-	var upload_button = $("#js-upload-avatar-image-button");
+	var upload_button = $("#upload-profile-image-button");
 	var upload_url = upload_button.attr("data-action");
+	var csrftoken = window.Tools.getCSRF();
+
 	var loading;
 
 	var uploader = new ss.SimpleUpload({
-		button 				: "js-upload-avatar-image-button",
+		button 				: "upload-profile-image-button",
 		url 				: upload_url,
 		name 				: "uploadfile",
 		responseType		: "json",
@@ -21,51 +23,84 @@
 		onSubmit: function ( filename, extension ) {
 			// gets called BEFORE the file is uploaded
 
-			loading = window.Core.notification.loading();
+			// loading = window.Core.notifications.loading();
+			upload_button.removeClass("loading success error");
+			upload_button.addClass("loading");
 		},
 
-		onComplete: function ( filename, response, upload_button, file_element ) {
+		onComplete: function ( filename, response, btn, file_element ) {
 
-			loading.close();
+			// loading.close();
+			upload_button.removeClass("loading");
+			upload_button.addClass("success");
 
-			console.log( response );
+			// if ( response.status === 200 ) {
+			// 	window.Core.notifications.success();
+			// }
 
-			if( response.errors.length > 0 ) {
-				Core.notification.notification("error", response.errors);
-			}
-			else {
-				if ( response.status == 200 ) {
-					Core.notification.notification("success");
-				}
-			}
-
-			if ( response.hasOwnProperty("data") && response.data.hasOwnProperty("imageid") ) {
-				add_image_to_list( response.data.imageid );
-			}
 		},
 
-		onError: function ( filename, errorType, status, statusText, response, upload_button, file_element ) {
+		onError: function ( filename, errorType, status, statusText, response, btn, file_element ) {
 			// error occured
 
-			loading.close();
-
-			console.log( status );
-			console.log( response );
-
-			if ( status === 413 ) {
-				Core.notification.notification("error", "Image can't exceed 8MB.");
-			}
-			else {
-				Core.notification.notification("error");
-			}
+			// loading.close();
+			upload_button.removeClass("loading");
+			window.Core.notifications.error();
 		}
 	});
+	
+})();
 
-	function add_image_to_list ( imageid ) {
-		$("<img/>")
-			.attr("class", "house-image")
-			.attr("src", "/image/" + imageid + "/")
-			.appendTo( $("#js-image-list") );
-	}
+(function () {
+	// handler for the house picture uploader
+
+	"use strict";
+
+	var upload_button = $("#upload-cover-image-button");
+	var upload_url = upload_button.attr("data-action");
+	var csrftoken = window.Tools.getCSRF();
+
+	var loading;
+
+	var uploader = new ss.SimpleUpload({
+		button 				: "upload-cover-image-button",
+		url 				: upload_url,
+		name 				: "uploadfile",
+		responseType		: "json",
+		// noParams			: true,
+		multipart			: true,
+		allowedExtensions	: ['jpg', 'jpeg', 'png', 'gif', 'svg'],
+		customHeaders		: { "X-CSRFToken": csrftoken },
+		hoverClass			: "hover-state",
+
+		onSubmit: function ( filename, extension ) {
+			// gets called BEFORE the file is uploaded
+
+			// loading = window.Core.notifications.loading();
+			upload_button.removeClass("loading success error");
+			upload_button.addClass("loading");
+		},
+
+		onComplete: function ( filename, response, btn, file_element ) {
+
+			upload_button.removeClass("loading");
+			upload_button.addClass("success");
+
+			// loading.close();
+
+			// if ( response.status === 200 ) {
+			// 	window.Core.notifications.success();
+			// }
+
+		},
+
+		onError: function ( filename, errorType, status, statusText, response, btn, file_element ) {
+			// error occured
+
+			// loading.close();
+			upload_button.removeClass("loading");
+			window.Core.notifications.error();
+		}
+	});
 	
 })();

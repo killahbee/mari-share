@@ -1,0 +1,24 @@
+@import "../utilities";
+
+/*--------------------------------------------------------------
+1.0 - Loading
+--------------------------------------------------------------*/
+$loading-size: 50px;
+.application-loading { position: fixed; bottom: 10px; right: 10px; width: $loading-size; height: $loading-size; background-color: purple; border-radius: 4px; z-index: 99999; }
+.application-loading img { position: absolute; top: 5px; left: 5px; width: $loading-size - 10px; height: $loading-size - 10px; }
+
+/*--------------------------------------------------------------
+2.0 - Success
+--------------------------------------------------------------*/
+$success-size: 50px;
+.application-success { position: fixed; bottom: 10px; right: 10px; width: $success-size; height: $success-size; background-color: $color-green; border-radius: 4px; z-index: 99999; }
+.application-success img { position: absolute; top: 5px; left: 5px; width: $success-size - 10px; height: $success-size - 10px; }
+.application-success .fa { position: absolute; top: 0; left: 0; width: $success-size; height: $success-size; text-align: center; line-height: $success-size; color: #fff; }
+
+/*--------------------------------------------------------------
+3.0 - Error
+--------------------------------------------------------------*/
+$error-size: 50px;
+.application-error { position: fixed; bottom: 10px; right: 10px; width: $error-size; height: $error-size; background-color: $color-red; border-radius: 4px; z-index: 99999; }
+.application-error img { position: absolute; top: 5px; left: 5px; width: $error-size - 10px; height: $error-size - 10px; }
+.application-error .fa { position: absolute; top: 0; left: 0; width: $error-size; height: $error-size; text-align: center; line-height: $error-size; color: #fff; }

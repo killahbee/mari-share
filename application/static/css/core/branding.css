@@ -32,6 +32,39 @@ a.button { display: inline-block; text-decoration: none; }
 .button.invisible:hover { background-color: rgba(0, 0, 0, 0.1); }
 
 /*--------------------------------------------------------------
+2.0 - Upload Buttons
+--------------------------------------------------------------*/
+.upload-button { display: inline-block; padding: 0 20px; height: $button-height; border-radius: 40px; }
+.upload-button { background-color: $color-blue; color: #fff; width: 70px; cursor: pointer; }
+
+$ub-circle: 8px;
+.upload-button .icon-circle { position: absolute; top: $ub-circle; left: $ub-circle; }
+.upload-button .icon-circle { width: $button-height - ($ub-circle*2) - 4px; height: $button-height - ($ub-circle*2) - 4px; border: 2px solid #fff; }
+.upload-button .icon-circle { background-color: #fff; border-radius: 20px; }
+
+.upload-button .icon-circle .fa { position: absolute; top: 0; left: 0; width: $button-height - ($ub-circle*2) - 4px; height: $button-height - ($ub-circle*2) - 4px; }
+.upload-button .icon-circle .fa { line-height: $button-height - ($ub-circle*2) - 4px; text-align: center; font-size: 12px; color: $color-blue; }
+.upload-button .success { display: none; }
+.upload-button .loading{ display: none; }
+
+.upload-button .button-text { margin-left: $button-height - ($ub-circle*2); line-height: $button-height; font-size: 14px; }
+
+.upload-button.loading .icon-circle { background-color: transparent; border-color: #fff #fff #fff transparent; }
+.upload-button.loading .icon-circle { -webkit-animation: loading-button-spin 0.75s infinite linear; animation: loading-button-spin 0.75s infinite linear; }
+.upload-button.loading .default{ display: none; }
+.upload-button.loading .loading{ display: block; }
+
+.upload-button.success { background-color: $color-bright-green; }
+.upload-button.success .icon-circle { background-color: #fff; }
+.upload-button.success .icon-circle .fa { color: $color-bright-green; }
+.upload-button.success .default { display: none; }
+.upload-button.success .success { display: block; }
+
+.upload-button.error { background-color: $color-red; }
+.upload-button.error .icon-circle { background-color: #fff; }
+.upload-button.error .icon-circle .fa { color: $color-red; }
+
+/*--------------------------------------------------------------
 3.0 - Inputs
 --------------------------------------------------------------*/
 input[type="text"], input[type="password"] { margin: 0; padding: 0; border: none; box-sizing: border-box; }

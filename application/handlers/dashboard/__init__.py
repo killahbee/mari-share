@@ -15,7 +15,7 @@ import application.tools as tools
 @application.app.route("/dashboard/", methods=["GET"])
 @application.app.route("/dashboard/<username>/", methods=["GET"])
 @tools.authenticated
-def dashboard( user, username ):
+def dashboard( user, username=None ):
 
 	if username == None:
 		username = user["username"]

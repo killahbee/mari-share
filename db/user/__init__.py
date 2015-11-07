@@ -3,8 +3,6 @@ import db
 
 def get( userid=None, cols="*" ):
 
-	print userid
-
 	try:
 		conn = db.get_db()
 		cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
@@ -32,3 +30,79 @@ def get( userid=None, cols="*" ):
 		payload = {}
 
 	return payload
+
+def picture ( userid=None, cols="*" ):
+
+	try:
+		conn = db.get_db()
+		cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+
+		sql_query = "SELECT * FROM profile_images WHERE userid = %s;"
+		sql_data = (userid, )
+		cur.execute( sql_query, sql_data )
+		payload = cur.fetchone()
+
+		cur.close()
+
+	except Exception, e:
+		print e
+		payload = None
+
+	return payload
+
+def delete_picture ( userid ):
+
+	try:
+		conn = db.get_db()
+		cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+
+		sql_query = "DELETE FROM profile_images WHERE userid = %s;"
+		sql_data = (userid, )
+
+		cur.execute( sql_query, sql_data )
+		conn.commit()
+		cur.close()
+
+	except Exception, e:
+		print e
+		return False
+
+	return True
+
+def cover ( userid=None, cols="*" ):
+
+	try:
+		conn = db.get_db()
+		cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+
+		sql_query = "SELECT * FROM cover_image WHERE userid = %s;"
+		sql_data = (userid, )
+		cur.execute( sql_query, sql_data )
+		payload = cur.fetchone()
+
+		cur.close()
+
+	except Exception, e:
+		print e
+		payload = None
+
+	return payload
+
+def delete_cover ( userid ):
+
+	try:
+		conn = db.get_db()
+		cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+
+		sql_query = "DELETE FROM cover_image WHERE userid = %s;"
+		sql_data = (userid, )
+
+		cur.execute( sql_query, sql_data )
+		conn.commit()
+		cur.close()
+
+	except Exception, e:
+		print e
+		return False
+
+	return True
