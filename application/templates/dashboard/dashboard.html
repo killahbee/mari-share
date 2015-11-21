@@ -11,7 +11,7 @@
 
 {% block page_content %}
 
-	<section class="profile-content {% if not is_logged_in_user %}show-only-profile{% endif %}">
+	<section class="profile-content {% if not is_logged_in_user or not messages %}show-only-profile{% endif %}">
 
 		<section class="dashboard-wrapper">
 
@@ -78,7 +78,7 @@
 
 			</section>
 
-			{% if is_logged_in_user %}
+			{% if is_logged_in_user and messages %}
 				<section class="messages-wrapper">
 					<section class="message-box">
 
