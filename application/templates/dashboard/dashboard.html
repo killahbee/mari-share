@@ -11,53 +11,95 @@
 
 {% block page_content %}
 
-	<section class="dashboard-wrapper">
+	<section class="profile-content {% if not is_logged_in_user %}show-only-profile{% endif %}">
 
-		<section class="profile-wrapper">
+		<section class="dashboard-wrapper">
 
-			<section class="profile-cover">
-				<img class="cover" src="/cover/{{ profile_user["userid"] }}/">
+			<section class="main-column">
 
-				<div class="user-image">
-					<img class="avatar" src="/pictures/{{ profile_user["userid"] }}/">
-				</div>
-			</section>
+				<section class="profile-wrapper">
 
-			<section class="profile-content">
+					<section class="profile-cover">
+						<img class="cover" src="/cover/{{ profile_user["userid"] }}/">
 
-				<h1 class="username">{{ profile_user["username"] }}</h1>
-
-				<section class="about-user">
-
-					<div class="detail credibillity-rating">
-						<div class="label">Rating</div>
-						<div class="value">
-							<div class="rating-icons">
-								<div class="rating r1 fa fa-leaf active"></div>
-								<div class="rating r2 fa fa-leaf active"></div>
-								<div class="rating r3 fa fa-leaf active"></div>
-								<div class="rating r4 fa fa-leaf"></div>
-								<div class="rating r5 fa fa-leaf"></div>
-							</div>
+						<div class="user-image">
+							<img class="avatar" src="/pictures/{{ profile_user["userid"] }}/">
 						</div>
-					</div>
+					</section>
 
-					<div class="detail">
-						<div class="label">Role</div>
-						<div class="value">{{ profile_user["role"] }}</div>
-					</div>
+					<section class="profile-content">
 
-					<div class="detail">
-						<div class="label">Bio</div>
-						<div class="value">{{ profile_user["bio"] }}</div>
-					</div>
+						<h1 class="username">{{ profile_user["username"] }}</h1>
+
+						<section class="about-user">
+
+							<div class="detail credibillity-rating">
+								<div class="label">Rating</div>
+								<div class="value">
+									<div class="rating-icons">
+										<div class="rating r1 fa fa-leaf active"></div>
+										<div class="rating r2 fa fa-leaf active"></div>
+										<div class="rating r3 fa fa-leaf active"></div>
+										<div class="rating r4 fa fa-leaf"></div>
+										<div class="rating r5 fa fa-leaf"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="detail">
+								<div class="label">Role</div>
+								<div class="value">{{ profile_user["role"] }}</div>
+							</div>
+
+							<div class="detail">
+								<div class="label">Bio</div>
+								<div class="value">{{ profile_user["bio"] }}</div>
+							</div>
+
+						</section>
+
+					</section>
+
+					<section class="profile-foot">
+					</section>
 
 				</section>
 
+				{% if not is_logged_in_user %}
+				<section class="dash-box send-message-box">
+					<section class="inner-dash-box">
+						<section class="inner-content">
+							<p>Would you like to send {{ profile_user["username"] }} a message?</p>
+							<a href="/messages/{{ profile_user["username"] }}/" class="button blue">Send Message</a>
+						</section>
+					</section>
+				</section>
+				{% endif %}
+
 			</section>
 
-			<section class="profile-foot">
-			</section>
+			{% if is_logged_in_user %}
+				<section class="messages-wrapper">
+					<section class="message-box">
+
+						{% for message in messages %}
+						<div class="message">
+
+							<div class="author">
+								<img src="/pictures/{{ message["author"] }}/">
+							</div>
+
+							<div class="message-content">
+								<p>{{ message["message"] }}</p>
+							</div>
+						</div>
+						{% endfor %}
+
+					</section>
+				</section>
+			{% endif %}
+
+			<div class="cb"></div>
 
 		</section>
 

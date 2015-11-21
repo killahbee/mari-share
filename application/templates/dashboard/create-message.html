@@ -1,0 +1,41 @@
+{% extends "auth_base.html" %}
+
+{% block local_css %}
+	{% assets filters="scss", output="gen/dashboard/create-message.css", "css/dashboard/create-message.css" %}
+		<link rel="stylesheet" href="{{ ASSET_URL }}">
+	{% endassets %}
+{% endblock %}
+
+{% block local_js %}
+{% endblock %}
+
+{% block page_content %}
+	<section class="page-content">
+		<section class="message-box">
+
+			<div class="subject-container">
+				<div class="subject-displacement">
+					<div class="subject-image circle">
+						<img class="avatar circle" src="/pictures/{{ profile_user["userid"] }}/">
+					</div>
+				</div>
+			</div>
+
+			<div class="form-container">
+				<form method="POST" action="/messages/{{ profile_user["userid"] }}/">
+
+					<label>Message</label>
+					<textarea name="message">{{ message }}</textarea>
+
+					<input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+
+					<div class="submit-container">
+						<button type="submit" class="button green">Send Message</button>
+					</div>
+
+				</form>
+			</div>
+
+		</section>
+	</section>
+{% endblock %}

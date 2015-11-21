@@ -34,3 +34,11 @@ CREATE table neighborhood (
 	hoodid uuid PRIMARY KEY DEFAULT uuid_generate_v1(),
 	name text
 );
+
+CREATE table message (
+    id uuid UNIQUE PRIMARY KEY DEFAULT uuid_generate_v1(),
+    subject uuid REFERENCES users(userid) ON DELETE SET NULL,
+    author uuid REFERENCES users(userid) ON DELETE SET NULL,
+    created timestamp DEFAULT CURRENT_TIMESTAMP,
+    message text
+);

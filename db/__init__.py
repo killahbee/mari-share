@@ -12,6 +12,7 @@ from psycopg2.extensions import adapt, register_adapter, AsIs
 # import other db libraries
 import db.user as user
 import db.admin as admin
+import db.messages as messages
 import db.neighborhoods as neighborhoods
 
 def connect_db():

@@ -7,43 +7,53 @@
 /*--------------------------------------------------------------
 1.0 - Base
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{}line{font-family:\000038}}
-.dashboard-wrapper {
+@media -sass-debug-info{filename{}line{font-family:\0000312}}
+.profile-content {
   margin: 40px 50px;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\000039}}
-.profile-wrapper {
+@media -sass-debug-info{filename{}line{font-family:\0000313}}
+.dashboard-wrapper {
   margin: 0 auto;
+  width: 880px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000314}}
+.main-column {
+  float: left;
   width: 600px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000315}}
+.profile-wrapper {
   background-color: #fff;
-  border-radius: 6px;
+  border-radius: 3px;
   overflow: hidden;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000310}}
+@media -sass-debug-info{filename{}line{font-family:\0000316}}
 .profile-content {
   margin: 30px 50px 0 50px;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000311}}
+@media -sass-debug-info{filename{}line{font-family:\0000317}}
 .profile-foot {
   height: 50px;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000313}}
+@media -sass-debug-info{filename{}line{font-family:\0000319}}
 .profile-cover {
   width: 100%;
   height: 200px;
   background-color: #ddd;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000314}}
+@media -sass-debug-info{filename{}line{font-family:\0000320}}
 .profile-cover img.cover {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000315}}
+@media -sass-debug-info{filename{}line{font-family:\0000321}}
 .profile-cover .user-image {
   position: absolute;
   bottom: -30px;
@@ -54,7 +64,7 @@
   border-radius: 200px;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000316}}
+@media -sass-debug-info{filename{}line{font-family:\0000322}}
 .profile-cover .user-image img {
   position: absolute;
   top: 5px;
@@ -64,10 +74,43 @@
   border-radius: 200px;
 }
 
+/* show only profile */
+@media -sass-debug-info{filename{}line{font-family:\0000326}}
+.profile-content.show-only-profile .dashboard-wrapper {
+  width: 600px;
+}
+
+/* dash boxes */
+@media -sass-debug-info{filename{}line{font-family:\0000329}}
+.dash-box {
+  margin-top: 20px;
+  float: left;
+  width: 50%;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000330}}
+.dash-box .inner-dash-box {
+  padding: 20px 0;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000331}}
+.dash-box .inner-dash-box .inner-content {
+  margin: 0 20px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000332}}
+.dash-box .inner-dash-box p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
 /*--------------------------------------------------------------
 2.0 - User Profile
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{}line{font-family:\0000321}}
+@media -sass-debug-info{filename{}line{font-family:\0000337}}
 .username {
   font-size: 30px;
   font-weight: 700;
@@ -77,13 +120,13 @@
 /*--------------------------------------------------------------
 3.0 - Credibillity
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{}line{font-family:\0000327}}
+@media -sass-debug-info{filename{}line{font-family:\0000343}}
 .credibillity-rating .rating {
   display: inline-block;
   color: #ccc;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000328}}
+@media -sass-debug-info{filename{}line{font-family:\0000344}}
 .credibillity-rating .rating.active {
   color: #187a51;
 }
@@ -91,12 +134,12 @@
 /*--------------------------------------------------------------
 4.0 - About User
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{}line{font-family:\0000335}}
+@media -sass-debug-info{filename{}line{font-family:\0000351}}
 .about-user {
   margin-top: 5px;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000337}}
+@media -sass-debug-info{filename{}line{font-family:\0000353}}
 .about-user .detail .label {
   float: left;
   width: 60px;
@@ -107,11 +150,87 @@
   text-align: right;
 }
 
-@media -sass-debug-info{filename{}line{font-family:\0000338}}
+@media -sass-debug-info{filename{}line{font-family:\0000354}}
 .about-user .detail .value {
   margin-left: 80px;
   font-size: 15px;
   line-height: 20px;
   font-weight: 300;
   color: #2b2b2b;
+}
+
+/*--------------------------------------------------------------
+5.0 - Messages Wrapper
+--------------------------------------------------------------*/
+@media -sass-debug-info{filename{}line{font-family:\0000359}}
+.messages-wrapper {
+  float: left;
+  width: 280px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000360}}
+.messages-wrapper .message-box {
+  margin-left: 30px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000361}}
+.messages-wrapper .message-box .message {
+  margin-top: 30px;
+  padding: 20px 0;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000362}}
+.messages-wrapper .message-box .message:first-child {
+  margin-top: 0;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000363}}
+.messages-wrapper .message-box .message .message-content {
+  margin: 0 20px 0 30px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000364}}
+.messages-wrapper .message-box .message .message-content p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6em;
+  white-space: pre-line;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000366}}
+.messages-wrapper .message-box .message .author {
+  position: absolute;
+  top: -15px;
+  left: -20px;
+  width: 34px;
+  height: 34px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000367}}
+.messages-wrapper .message-box .message .author {
+  border-radius: 40px;
+  border: 4px solid #e5e5ea;
+  overflow: hidden;
+  background-color: #e5e5ea;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000368}}
+.messages-wrapper .message-box .message .author img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+}
+
+/*--------------------------------------------------------------
+6.0 - Send Message Box
+--------------------------------------------------------------*/
+@media -sass-debug-info{filename{}line{font-family:\0000374}}
+.send-message-box .button {
+  margin-top: 10px;
+  width: 100%;
 }

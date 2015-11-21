@@ -1,12 +1,18 @@
 @import "../utilities";
 
+$box-br: 3px;
 $profile-width: 600px;
+$messages-width: 280px;
+$messages-margin: 30px;
+$message-author-size: 34px;
 
 /*--------------------------------------------------------------
 1.0 - Base
 --------------------------------------------------------------*/
-.dashboard-wrapper { margin: 40px 50px; }
-.profile-wrapper { margin: 0 auto; width: $profile-width; background-color: #fff; border-radius: 6px; overflow: hidden; }
+.profile-content { margin: 40px 50px; }
+.dashboard-wrapper { margin: 0 auto; width: $profile-width + $messages-width; }
+.main-column { float: left; width: $profile-width; }
+.profile-wrapper { background-color: #fff; border-radius: $box-br; overflow: hidden; }
 .profile-content { margin: 30px 50px 0 50px; }
 .profile-foot { height: 50px; }
 
@@ -14,6 +20,16 @@ $profile-width: 600px;
 .profile-cover img.cover { width: 100%; }
 .profile-cover .user-image { position: absolute; bottom: -30px; right: 20px; width: 100px; height: 100px; background-color: #fff; border-radius: 200px; }
 .profile-cover .user-image img { position: absolute; top: 5px; left: 5px; width: 90px; height: 90px; border-radius: 200px; }
+
+/* show only profile */
+.profile-content.show-only-profile {}
+.profile-content.show-only-profile .dashboard-wrapper { width: $profile-width; }
+
+/* dash boxes */
+.dash-box { margin-top: 20px; float: left; width: 50%; }
+.dash-box .inner-dash-box { padding: 20px 0; background-color: #fff; border-radius: $box-br; }
+.dash-box .inner-dash-box .inner-content { margin: 0 20px; }
+.dash-box .inner-dash-box p { font-size: 15px; font-weight: 300; line-height: 1.6em; }
 
 /*--------------------------------------------------------------
 2.0 - User Profile
@@ -36,3 +52,23 @@ $label-width: 60px;
 .about-user .detail {}
 .about-user .detail .label { float: left; width: $label-width; font-size: 12px; line-height: 20px; font-weight: 400; color: #666; text-align: right; }
 .about-user .detail .value { margin-left: $label-width + 20px; font-size: 15px; line-height: 20px; font-weight: 300; color: #2b2b2b; }
+
+/*--------------------------------------------------------------
+5.0 - Messages Wrapper
+--------------------------------------------------------------*/
+.messages-wrapper { float: left; width: $messages-width; }
+.messages-wrapper .message-box { margin-left: $messages-margin; }
+.messages-wrapper .message-box .message { margin-top: 30px; padding: 20px 0; background-color: #fff; border-radius: $box-br; }
+.messages-wrapper .message-box .message:first-child { margin-top: 0; }
+.messages-wrapper .message-box .message .message-content { margin: 0 20px 0 30px; }
+.messages-wrapper .message-box .message .message-content p { font-size: 15px; font-weight: 300; line-height: 1.6em; white-space: pre-line; }
+
+.messages-wrapper .message-box .message .author { position: absolute; top: -15px; left: -20px; width: $message-author-size; height: $message-author-size; }
+.messages-wrapper .message-box .message .author { border-radius: 40px; border: 4px solid #e5e5ea; overflow: hidden; background-color: #e5e5ea; }
+.messages-wrapper .message-box .message .author img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 40px; }
+
+/*--------------------------------------------------------------
+6.0 - Send Message Box
+--------------------------------------------------------------*/
+.send-message-box {}
+.send-message-box .button { margin-top: 10px; width: 100%; }
