@@ -14,7 +14,9 @@ def get( userid=None ):
 			FROM 
 				message
 			WHERE 
-				subject = %s;
+				subject = %s
+			ORDER BY 
+				created DESC;
 		"""
 
 		sql_data = (userid, )
